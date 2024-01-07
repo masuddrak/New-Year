@@ -1,38 +1,74 @@
-*{
-    font-family: 'Merriweather', serif;
+* {
+    font-family: 'Merriweather', 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* common class */
-.container{
+.container {
     max-width: 1320px;
     margin: auto;
 }
-/* banner */
-.banner{
-   margin-top: 100px;
+
+.banner ,.discount{
+    margin-top: 100px;
 }
-.banner_container{
+/* banner */
+.banner_container {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.73)),
-    url('../img/Banner\ Image.png');
-    
+        url('../img/Banner\ Image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     text-align: center;
     height: 600px;
     display: flex;
     flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
-.banner_container h3{
+
+.banner_container h3 {
     font-size: 32px;
     font-weight: 400;
 }
-.banner_container h2{
+
+.banner_container h2 {
     margin-top: 5px;
     font-size: 72px;
     font-weight: 900;
-    line-height: 95px; /* 131.944% */
+    line-height: 95px;
+    /* 131.944% */
+}
+
+/* discount section */
+.discount_container {
+    text-align: center;
+}
+
+.discount_container h1 {
+    color: #F00;
+    font-family: Inter;
+    font-size: 88px;
+    font-weight: 700;
+}
+
+.discount_container h4 {
+    color: #F00;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 48px 0 16px 0;
+}
+.discount_container h2 {
+    color: #070211;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+}
+.discount_container img {
+    margin-top: 48px;
 }
