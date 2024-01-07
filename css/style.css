@@ -11,12 +11,15 @@
     margin: auto;
 }
 
-.banner ,.discount{
+.banner,
+.discount,
+.welcome {
     margin-top: 100px;
 }
+
 /* banner */
 .banner_container {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.73)),
+    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%),
         url('../img/Banner\ Image.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +44,6 @@
     font-size: 72px;
     font-weight: 900;
     line-height: 95px;
-    /* 131.944% */
 }
 
 /* discount section */
@@ -63,12 +65,64 @@
     font-weight: 500;
     margin: 48px 0 16px 0;
 }
+
 .discount_container h2 {
     color: #070211;
     font-family: Inter;
     font-size: 48px;
     font-weight: 700;
 }
+
 .discount_container img {
     margin-top: 48px;
 }
+
+/* welcome section */
+.welcome_container {
+    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%),
+        url('../img/Vectorrr.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+column-gap: 40px;
+}
+
+.welcom_left_container {
+    width: 50%;
+
+}
+
+.welcom_left_container h1 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 7.04px;
+}
+
+.welcom_left_container p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 24px 0 48px 0;
+}
+
+.welcom_left_container button {
+    padding: 16px 32px;
+    border-radius: 8px;
+    background: #F00;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+}
+
+.welcom_right_container {}
