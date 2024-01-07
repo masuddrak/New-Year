@@ -10,10 +10,21 @@
     max-width: 1320px;
     margin: auto;
 }
-
+button {
+    padding: 16px 32px;
+    border-radius: 8px;
+    background: #F00;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+}
 .banner,
 .discount,
-.welcome {
+.welcome,
+.date_time {
     margin-top: 100px;
 }
 
@@ -89,7 +100,7 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-column-gap: 40px;
+    column-gap: 40px;
 }
 
 .welcom_left_container {
@@ -113,16 +124,27 @@ column-gap: 40px;
     margin: 24px 0 48px 0;
 }
 
-.welcom_left_container button {
-    padding: 16px 32px;
-    border-radius: 8px;
-    background: #F00;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    color: #fff;
+/* date and time */
+.date_time_container {
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    height: 482px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-.welcom_right_container {}
+.date_time_container span {
+    color: #F00;
+}
+.date_time_container h3 {
+    color: #070211;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+}
+.date_time_container button {
+   margin-top: 48px;
+}
+
