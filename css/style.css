@@ -295,5 +295,36 @@ button {
 }
 /* portfolio */
 .portfolio{
-    margin-top: 50px;
+    margin-top: 300px;
+}
+.portfolio_header h4{
+    color: #F00;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+.portfolio_header h2{
+    color: #070211;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 16px 0 22px 0;
+}
+.portfolio_header p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px; 
+}
+.portfolio_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    margin-top: 48px;
+}
+.portfolio_container img{
+    transition: 3s;
+}
+.portfolio_container img:hover{
+    transform: rotate(360deg);
 }
