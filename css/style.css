@@ -29,7 +29,9 @@ button {
 .date_time,
 .offer_containerF,
 .offer,
-.holidays, .portfolio{
+.holidays,
+.portfolio,
+.subscription{
     margin-top: 100px;
 }
 
@@ -219,9 +221,10 @@ button {
 }
 
 /* holiday section */
-.holidays{
+.holidays {
     position: relative;
 }
+
 .holidays_header {
     text-align: center;
     width: 70%;
@@ -234,56 +237,65 @@ button {
     font-size: 24px;
     font-weight: 500;
 }
+
 .holidays_header h2 {
     color: #F00;
     font-size: 72px;
     font-weight: 900;
     margin: 16px 0;
 }
+
 .holidays_header span {
     color: #070211;
 }
+
 .holidays_header p {
     color: rgba(7, 2, 17, 0.60);
     font-family: Inter;
     font-size: 20px;
     font-weight: 500;
-    line-height: 32px; 
+    line-height: 32px;
 }
-.holidays_container{
+
+.holidays_container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     margin-top: 64px;
 }
-.holiday_img_1{
+
+.holiday_img_1 {
     position: relative;
     width: 50%;
     text-align: end;
 }
-.holiday_img_1 img{
+
+.holiday_img_1 img {
     position: absolute;
     left: 0;
-    bottom:-350px;
+    bottom: -350px;
     z-index: 10;
-   width: 100%;
-   padding-left: 20px;
+    width: 100%;
+    padding-left: 20px;
 }
-.holiday_img_2{
+
+.holiday_img_2 {
     position: relative;
     align-self: self-end;
-    
+
 }
-.discount_img{
+
+.discount_img {
     position: absolute;
-   top: 70px;
-    left:0;
+    top: 70px;
+    left: 0;
     right: 0;
     margin-left: -200px;
-    
+
 }
-.holiday_bg{
+
+.holiday_bg {
     background-color: #F00;
     height: 230px;
     position: absolute;
@@ -291,40 +303,128 @@ button {
     left: 0;
     right: 0;
     z-index: 5;
-    
+
 }
+
 /* portfolio */
-.portfolio{
+.portfolio {
     margin-top: 300px;
 }
-.portfolio_header h4{
+
+.portfolio_header h4 {
     color: #F00;
     font-family: Inter;
     font-size: 24px;
     font-weight: 500;
 }
-.portfolio_header h2{
+
+.portfolio_header h2 {
     color: #070211;
     font-size: 48px;
     font-weight: 900;
     margin: 16px 0 22px 0;
 }
-.portfolio_header p{
+
+.portfolio_header p {
     color: rgba(7, 2, 17, 0.60);
     font-family: Inter;
     font-size: 20px;
     font-weight: 500;
-    line-height: 32px; 
+    line-height: 32px;
 }
-.portfolio_container{
+
+.portfolio_container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 48px;
 }
-.portfolio_container img{
+
+.portfolio_container img {
     transition: 3s;
+    width: 100%;
 }
-.portfolio_container img:hover{
+
+.portfolio_container img:hover {
     transform: rotate(360deg);
+}
+
+/* subscription */
+.subscription_container {
+    height: 616px;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subscription_container h2 {
+    color: #070211;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 40px 0 20px 0;
+}
+
+.subscription_container p {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 70%;
+    margin: auto;
+    /* 160% */
+}
+.subscription_email_container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 48px;
+    
+}
+.subscription_email_container input{
+    padding: 15px 80px 15px 15px;
+   border: none;
+   background-color: #fff;
+   outline: none;
+   border-radius: 50px 0 0 50px;
+}
+.submit_btn{
+    border: none;
+    border-radius: 0 50px 50px 0;
+    padding: 12px 30px;
+}
+/* footer */
+.footer{
+    height: 609px;
+    background: #070211;
+    color: #fff;
+    padding: 120px 0;
+}
+.footer_address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.call_info, .web_info{
+    display: flex;
+    margin-top: 10px;
+    justify-content: start;
+}
+
+.call_info img ,.web_info img{
+    padding-right: 10px;
+}
+hr{
+    border: 0.5px solid rgb(41, 41, 41);
+    margin: 48px 0;
+}
+.social_icon{
+    text-align: center;
+}
+.copyright_text{
+    display: flex;
+    justify-content: space-between;
 }
