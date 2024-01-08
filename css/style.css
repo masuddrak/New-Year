@@ -31,7 +31,8 @@ button {
 .offer,
 .holidays,
 .portfolio,
-.subscription{
+.subscription,
+.footer {
     margin-top: 100px;
 }
 
@@ -377,54 +378,71 @@ button {
     margin: auto;
     /* 160% */
 }
-.subscription_email_container{
+
+.subscription_email_container {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     margin-top: 48px;
-    
+
 }
-.subscription_email_container input{
+
+.subscription_email_container input {
     padding: 15px 80px 15px 15px;
-   border: none;
-   background-color: #fff;
-   outline: none;
-   border-radius: 50px 0 0 50px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    border-radius: 50px 0 0 50px;
 }
-.submit_btn{
+
+.submit_btn {
     border: none;
     border-radius: 0 50px 50px 0;
     padding: 12px 30px;
 }
+
 /* footer */
-.footer{
+.footer {
     height: 609px;
     background: #070211;
     color: #fff;
     padding: 120px 0;
 }
-.footer_address{
+
+.footer_address {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.call_info, .web_info{
+
+.call_info,
+.web_info {
     display: flex;
     margin-top: 10px;
     justify-content: start;
 }
 
-.call_info img ,.web_info img{
+.call_info img,
+.web_info img {
     padding-right: 10px;
 }
-hr{
+
+hr {
     border: 0.5px solid rgb(41, 41, 41);
     margin: 48px 0;
 }
-.social_icon{
-    text-align: center;
+
+.social_icon {
+   display: flex;
+   justify-content: center;
+   column-gap: 30px;
 }
-.copyright_text{
+.social_icon img{
+   width: 64px;
+   height: 64px;
+}
+
+.copyright_text {
     display: flex;
     justify-content: space-between;
 }
